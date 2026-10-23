@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+article{
+    width: 200px;
+    height: 80px;
+    background-color: lightseagreen;
+
+}
+
+@keyframes stretch {
+    0%{
+        transform: scaleX(100%);
+    }
+    50%{
+        transform: scaleX(400%);
+    }
+    100%{
+        transform: scaleX(100%);
+    }
+}
+#identiteit{
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0ms;
+    animation-iteration-count: 5;
+}
