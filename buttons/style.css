@@ -1,0 +1,29 @@
+body{
+}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    /* onzichtbare rand zorgt dat de knoppen niet verspringen door het hover-effect hieronder */
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+#hover:hover{
+    background-color: darkblue;
+    color: red;
+    border: solid 2px black;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 44%);
+}
+
+#active:active{
+    background-color: #3497ab;
+    transform: translateY(2px);
+}
+#focus:focus{
+    outline: 10px solid darkred;
+}
